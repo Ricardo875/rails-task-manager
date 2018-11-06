@@ -1,3 +1,23 @@
 // Place all the styles related to the tasks controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$font-family: 'Gloria Hallelujah', cursive;
+$font-title: 'Permanent Marker', cursive;
+$primary-color: #333;
+
+h1 {
+  font: 100% $font-title;
+}
+
+body {
+  font: 100% $font-family;
+  color: $primary-color;
+}
+
+li { display: inline-block;
+}
+
+a {
+    padding: 1px 2px;
+    text-decoration: none;
+}

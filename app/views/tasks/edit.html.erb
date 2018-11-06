@@ -1,9 +1,9 @@
 <h1>Edit task</h1>
 <%= form_for(@task) do |t| %>
-  <p><%= t.label :title %></p>
-  <p><%= t.text_field :title %></p>
-  <p><%= t.label :details %></p>
-  <p><%= t.text_field :details %></p>
+  <p><%= t.label :title %>
+  <%= t.text_field :title %></p>
+  <p><%= t.label :details %>
+  <%= t.text_field :details %></p>
   <p><%= if @task.completed == true
   "Uncheck if task is not completed"
   else
