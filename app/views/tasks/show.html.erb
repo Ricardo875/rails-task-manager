@@ -2,7 +2,7 @@
 <br><%= link_to "Edit this task", "/tasks/#{@task.id}/edit" %>
 <p><%= @task.details %></p>
 <p>
-  <%= check_box_tag :completed, "completed", @task.completed %>
+  <%= check_box_tag :completed, "completed", @task.completed, disabled: true %>
   <%= if @task.completed == true
   "This task is completed"
   else
