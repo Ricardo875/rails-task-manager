@@ -1,10 +1,16 @@
 <h1>Edit task</h1>
 <%= form_for(@task) do |t| %>
-  <%= t.label :title %>
-  <%= t.text_field :title %>
-  <%= t.label :details %>
-  <%= t.text_field :details %>
-  <%= t.submit %>
+  <p><%= t.label :title %></p>
+  <p><%= t.text_field :title %></p>
+  <p><%= t.label :details %></p>
+  <p><%= t.text_field :details %></p>
+  <p><%= if @task.completed == true
+  "Uncheck if task is not completed"
+  else
+    "Check if task is completed"
+    end %>
+  <%= t.check_box :completed %></p>
+  <p><%= t.submit %></p>
 <% end %>
 
 <p><%= link_to "Back to list", "/tasks" %></p>
